@@ -5,8 +5,8 @@
       {
         "appID": "Y5RJ8VL979.test.PSD2TestingApplication",
         "paths": [
-          "/callback*",
-          "/callback/*"
+          "/callback.html*",
+          "/callback*"
         ]
       }
     ]

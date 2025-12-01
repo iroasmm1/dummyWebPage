@@ -98,15 +98,15 @@
         </div>
         
         <h1>Authorization Successful</h1>
-        <p>Your authorization has been approved. Opening PSD2 Banking app...</p>
+        <p>The authorization code has been received by your app.</p>
         
         <div class="status">
-            <div class="status-text" id="status">Ready to open app</div>
+            <div class="status-text" id="status">✓ Code delivered to PSD2 Banking App</div>
         </div>
         
         <div class="code" id="code-display"></div>
         
-        <a href="#" id="manual-link">Open PSD2 Banking App</a>
+        <p style="margin-top: 30px; color: #999; font-size: 14px;">You can close this page and return to the app.</p>
         
         <div class="footer">
             PSD2 Banking Authorization Gateway
@@ -122,19 +122,10 @@
         const truncated = code.length > 16 ? code.substring(0, 8) + '...' + code.substring(code.length - 4) : code;
         document.getElementById('code-display').textContent = `Authorization Code: ${truncated}`;
         
-        // Construct deep link - Safari CAN open this once app is rebuilt
-        const deepLink = `psd2banking://callback?code=${encodeURIComponent(code)}`;
-        
-        // Set manual link
-        document.getElementById('manual-link').href = deepLink;
-        document.getElementById('manual-link').style.display = 'inline-block';
-        
-        // Update status
-        if (code === 'no-code') {
-            document.getElementById('status').textContent = 'No authorization code provided';
+        // Update status based on code presence
+        if (code === 'no-code' || !code) {
+            document.getElementById('status').textContent = '⚠ No authorization code provided';
             document.getElementById('status').style.color = '#dc3545';
-        } else {
-            document.getElementById('status').textContent = 'Tap button below to open PSD2 Banking app';
         }
     </script>
 </body>
