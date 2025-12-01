@@ -14,7 +14,7 @@ struct PSD2TestingApplicationApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RootView()
+            RootView
                 .environmentObject(authViewModel)
                 .onOpenURL { url in
                     print("🔗 App received deep link: \(url.absoluteString)")
