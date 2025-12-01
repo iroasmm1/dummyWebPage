@@ -159,29 +159,21 @@
         const returnButton = document.getElementById('return-button');
         returnButton.addEventListener('click', (e) => {
             e.preventDefault();
-            console.log('📱 Opening app with universal link');
+            console.log('📱 Opening app with custom URL scheme');
             
-            // Attempt 1: Try custom URL scheme with code
+            // PRIMARY: Try custom URL scheme with code - this is more reliable on iOS
             const customSchemeUrl = `psd2banking://callback?code=${encodeURIComponent(code)}`;
             console.log('🔗 Trying custom scheme:', customSchemeUrl);
             
-            try {
-                window.location.href = customSchemeUrl;
-            } catch (e) {
-                console.log('⚠️ Custom scheme failed:', e);
-            }
+            window.location.href = customSchemeUrl;
             
-            // Attempt 2: After a brief delay, try universal link (triggers if custom scheme fails)
+            // FALLBACK: After 2 seconds, if app didn't open, show instructions
             setTimeout(() => {
-                console.log('🌐 Trying universal link');
-                window.location.href = `https://iroasmm1.github.io/dummyWebPage/callback.html?code=${encodeURIComponent(code)}`;
-            }, 500);
+                console.log('⏱ Custom scheme may have failed, user should see app picker or error');
+            }, 2000);
         });
         
-        // IMPORTANT: If the app is installed and properly configured with universal links,
-        // simply being on this page should trigger the app to open automatically.
-        // However, we provide the button as a manual trigger.
-        console.log('✅ Callback page loaded. Code is ready. User can tap "Return to App" button or app may auto-open.');
+        console.log('✅ Callback page loaded. Code is ready. User should tap "Return to App" button.');
     </script>
 </body>
 </html>

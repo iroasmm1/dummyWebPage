@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		CED415C42EDB380600E467F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED415AE2EDB380500E467F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED415B52EDB380500E467F3;
+			remoteInfo = PSD2TestingApplication;
+		};
+		CED415CE2EDB380600E467F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED415AE2EDB380500E467F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED415B52EDB380500E467F3;
+			remoteInfo = PSD2TestingApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CED415B62EDB380500E467F3 /* PSD2TestingApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PSD2TestingApplication.app; path = "Open Banking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED415C32EDB380600E467F3 /* PSD2TestingApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PSD2TestingApplicationTests.xctest; path = "Open Banking.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED415CD2EDB380600E467F3 /* PSD2TestingApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PSD2TestingApplicationUITests.xctest; path = "Open Banking.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CED415B82EDB380500E467F3 /* PSD2TestingApplication */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PSD2TestingApplication;
+			sourceTree = "<group>";
+		};
+		CED415C62EDB380600E467F3 /* PSD2TestingApplicationTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PSD2TestingApplicationTests;
+			sourceTree = "<group>";
+		};
+		CED415D02EDB380600E467F3 /* PSD2TestingApplicationUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PSD2TestingApplicationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CED415B32EDB380500E467F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED415C02EDB380600E467F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED415CA2EDB380600E467F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CED415AD2EDB380500E467F3 = {
+			isa = PBXGroup;
+			children = (
+				CED415B82EDB380500E467F3 /* PSD2TestingApplication */,
+				CED415C62EDB380600E467F3 /* PSD2TestingApplicationTests */,
+				CED415D02EDB380600E467F3 /* PSD2TestingApplicationUITests */,
+				CED415B72EDB380500E467F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CED415B72EDB380500E467F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CED415B62EDB380500E467F3 /* PSD2TestingApplication.app */,
+				CED415C32EDB380600E467F3 /* PSD2TestingApplicationTests.xctest */,
+				CED415CD2EDB380600E467F3 /* PSD2TestingApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CED415B52EDB380500E467F3 /* PSD2TestingApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED415D72EDB380600E467F3 /* Build configuration list for PBXNativeTarget "PSD2TestingApplication" */;
+			buildPhases = (
+				CED415B22EDB380500E467F3 /* Sources */,
+				CED415B32EDB380500E467F3 /* Frameworks */,
+				CED415B42EDB380500E467F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CED415B82EDB380500E467F3 /* PSD2TestingApplication */,
+			);
+			name = PSD2TestingApplication;
+			packageProductDependencies = (
+			);
+			productName = PSD2TestingApplication;
+			productReference = CED415B62EDB380500E467F3 /* PSD2TestingApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CED415C22EDB380600E467F3 /* PSD2TestingApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED415DA2EDB380600E467F3 /* Build configuration list for PBXNativeTarget "PSD2TestingApplicationTests" */;
+			buildPhases = (
+				CED415BF2EDB380600E467F3 /* Sources */,
+				CED415C02EDB380600E467F3 /* Frameworks */,
+				CED415C12EDB380600E467F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CED415C52EDB380600E467F3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CED415C62EDB380600E467F3 /* PSD2TestingApplicationTests */,
+			);
+			name = PSD2TestingApplicationTests;
+			packageProductDependencies = (
+			);
+			productName = PSD2TestingApplicationTests;
+			productReference = CED415C32EDB380600E467F3 /* PSD2TestingApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CED415CC2EDB380600E467F3 /* PSD2TestingApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED415DD2EDB380600E467F3 /* Build configuration list for PBXNativeTarget "PSD2TestingApplicationUITests" */;
+			buildPhases = (
+				CED415C92EDB380600E467F3 /* Sources */,
+				CED415CA2EDB380600E467F3 /* Frameworks */,
+				CED415CB2EDB380600E467F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CED415CF2EDB380600E467F3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CED415D02EDB380600E467F3 /* PSD2TestingApplicationUITests */,
+			);
+			name = PSD2TestingApplicationUITests;
+			packageProductDependencies = (
+			);
+			productName = PSD2TestingApplicationUITests;
+			productReference = CED415CD2EDB380600E467F3 /* PSD2TestingApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CED415AE2EDB380500E467F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					CED415B52EDB380500E467F3 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					CED415C22EDB380600E467F3 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = CED415B52EDB380500E467F3;
+					};
+					CED415CC2EDB380600E467F3 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = CED415B52EDB380500E467F3;
+					};
+				};
+			};
+			buildConfigurationList = CED415B12EDB380500E467F3 /* Build configuration list for PBXProject "PSD2TestingApplication" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CED415AD2EDB380500E467F3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CED415B72EDB380500E467F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED415B52EDB380500E467F3 /* PSD2TestingApplication */,
+				CED415C22EDB380600E467F3 /* PSD2TestingApplicationTests */,
+				CED415CC2EDB380600E467F3 /* PSD2TestingApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CED415B42EDB380500E467F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED415C12EDB380600E467F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED415CB2EDB380600E467F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CED415B22EDB380500E467F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED415BF2EDB380600E467F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED415C92EDB380600E467F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CED415C52EDB380600E467F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED415B52EDB380500E467F3 /* PSD2TestingApplication */;
+			targetProxy = CED415C42EDB380600E467F3 /* PBXContainerItemProxy */;
+		};
+		CED415CF2EDB380600E467F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED415B52EDB380500E467F3 /* PSD2TestingApplication */;
+			targetProxy = CED415CE2EDB380600E467F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CED415D52EDB380600E467F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CED415D62EDB380600E467F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CED415D82EDB380600E467F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = Y5RJ8VL979;
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleURLTypes = (
+				{
+					CFBundleTypeRole = Editor;
+					CFBundleURLName = "com.psd2banking.callback";
+					CFBundleURLSchemes = (
+						psd2banking,
+					);
+				},
+			);
+			INFOPLIST_KEY_NSFaceIDUsageDescription = "This app uses Face ID to securely authenticate your login and protect your PSD2 banking sessions.";
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+			INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.PSD2TestingApplication;
+				PRODUCT_NAME = "Open Banking";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CED415D92EDB380600E467F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = Y5RJ8VL979;
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleURLTypes = (
+				{
+					CFBundleTypeRole = Editor;
+					CFBundleURLName = "com.psd2banking.callback";
+					CFBundleURLSchemes = (
+						psd2banking,
+					);
+				},
+			);
+			INFOPLIST_KEY_NSFaceIDUsageDescription = "This app uses Face ID to securely authenticate your login and protect your PSD2 banking sessions.";
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.PSD2TestingApplication;
+				PRODUCT_NAME = "Open Banking";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CED415DB2EDB380600E467F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.PSD2TestingApplicationTests;
+				PRODUCT_NAME = "Open Banking";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSD2TestingApplication.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PSD2TestingApplication";
+			};
+			name = Debug;
+		};
+		CED415DC2EDB380600E467F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.PSD2TestingApplicationTests;
+				PRODUCT_NAME = "Open Banking";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSD2TestingApplication.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PSD2TestingApplication";
+			};
+			name = Release;
+		};
+		CED415DE2EDB380600E467F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.PSD2TestingApplicationUITests;
+				PRODUCT_NAME = "Open Banking";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PSD2TestingApplication;
+			};
+			name = Debug;
+		};
+		CED415DF2EDB380600E467F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.PSD2TestingApplicationUITests;
+				PRODUCT_NAME = "Open Banking";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PSD2TestingApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CED415B12EDB380500E467F3 /* Build configuration list for PBXProject "PSD2TestingApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED415D52EDB380600E467F3 /* Debug */,
+				CED415D62EDB380600E467F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED415D72EDB380600E467F3 /* Build configuration list for PBXNativeTarget "PSD2TestingApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED415D82EDB380600E467F3 /* Debug */,
+				CED415D92EDB380600E467F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED415DA2EDB380600E467F3 /* Build configuration list for PBXNativeTarget "PSD2TestingApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED415DB2EDB380600E467F3 /* Debug */,
+				CED415DC2EDB380600E467F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED415DD2EDB380600E467F3 /* Build configuration list for PBXNativeTarget "PSD2TestingApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED415DE2EDB380600E467F3 /* Debug */,
+				CED415DF2EDB380600E467F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CED415AE2EDB380500E467F3 /* Project object */;
+}
