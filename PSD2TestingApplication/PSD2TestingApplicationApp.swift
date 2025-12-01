@@ -14,24 +14,28 @@ struct PSD2TestingApplicationApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if authViewModel.isAuthenticated {
-                DashboardView()
-                    .environmentObject(authViewModel)
-            } else {
-                LoginView()
-                    .environmentObject(authViewModel)
-            }
+            RootView()
+                .environmentObject(authViewModel)
+                .onOpenURL { url in
+                    print("🔗 App received deep link: \(url.absoluteString)")
+                    handleDeepLink(url)
+                }
+                .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
+                    print("🔗 App received universal link activity")
+                    if let url = userActivity.webpageURL {
+                        print("🌐 Universal link URL: \(url.absoluteString)")
+                        handleDeepLink(url)
+                    }
+                }
         }
-        .onOpenURL { url in
-            print("🔗 App received deep link: \(url.absoluteString)")
-            handleDeepLink(url)
-        }
-        .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
-            print("🔗 App received universal link activity")
-            if let url = userActivity.webpageURL {
-                print("🌐 Universal link URL: \(url.absoluteString)")
-                handleDeepLink(url)
-            }
+    }
+    
+    @ViewBuilder
+    private var RootView: some View {
+        if authViewModel.isAuthenticated {
+            DashboardView()
+        } else {
+            LoginView()
         }
     }
     
