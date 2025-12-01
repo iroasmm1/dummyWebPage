@@ -87,6 +87,20 @@
             color: #999;
             font-size: 12px;
         }
+        .return-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .return-button:hover {
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
@@ -106,6 +120,8 @@
         
         <div class="code" id="code-display"></div>
         
+        <a href="#" id="return-button" class="return-button">Return to PSD2 Banking App</a>
+        
         <p style="margin-top: 30px; color: #999; font-size: 14px;">You can close this page and return to the app.</p>
         
         <div class="footer">
@@ -118,15 +134,54 @@
         const urlParams = new URLSearchParams(window.location.search);
         const code = urlParams.get('code') || 'no-code';
         
+        console.log('🔗 Callback page received code:', code);
+        
         // Display code (truncated for security)
         const truncated = code.length > 16 ? code.substring(0, 8) + '...' + code.substring(code.length - 4) : code;
         document.getElementById('code-display').textContent = `Authorization Code: ${truncated}`;
+        
+        // Save code to sessionStorage so the app can retrieve it if needed
+        if (code !== 'no-code' && code) {
+            sessionStorage.setItem('psd2_authorization_code', code);
+            console.log('💾 Code saved to sessionStorage');
+        }
         
         // Update status based on code presence
         if (code === 'no-code' || !code) {
             document.getElementById('status').textContent = '⚠ No authorization code provided';
             document.getElementById('status').style.color = '#dc3545';
+        } else {
+            document.getElementById('status').textContent = '✓ Code delivered to PSD2 Banking App';
+            document.getElementById('status').style.color = '#28a745';
         }
+        
+        // Set up return button to trigger app opening
+        const returnButton = document.getElementById('return-button');
+        returnButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('📱 Opening app with universal link');
+            
+            // Attempt 1: Try custom URL scheme with code
+            const customSchemeUrl = `psd2banking://callback?code=${encodeURIComponent(code)}`;
+            console.log('🔗 Trying custom scheme:', customSchemeUrl);
+            
+            try {
+                window.location.href = customSchemeUrl;
+            } catch (e) {
+                console.log('⚠️ Custom scheme failed:', e);
+            }
+            
+            // Attempt 2: After a brief delay, try universal link (triggers if custom scheme fails)
+            setTimeout(() => {
+                console.log('🌐 Trying universal link');
+                window.location.href = `https://iroasmm1.github.io/dummyWebPage/callback.html?code=${encodeURIComponent(code)}`;
+            }, 500);
+        });
+        
+        // IMPORTANT: If the app is installed and properly configured with universal links,
+        // simply being on this page should trigger the app to open automatically.
+        // However, we provide the button as a manual trigger.
+        console.log('✅ Callback page loaded. Code is ready. User can tap "Return to App" button or app may auto-open.');
     </script>
 </body>
 </html>
